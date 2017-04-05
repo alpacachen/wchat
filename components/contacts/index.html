@@ -1,0 +1,213 @@
+<div id="index">
+    <!--占位-->
+    <div class="header-1"></div>
+    <div class="header">
+        <span class="wchat">{{title}}</span>
+        <span class="add"><img src="../common/add.png"></span>
+        <span class="search"><img src="../common/search.png"></span>
+    </div>
+    <div class="main">
+        <div class="slidebar">
+            <span>A</span>
+            <span>B</span>
+            <span>C</span>
+            <span>D</span>
+            <span>E</span>
+            <span>F</span>
+            <span>G</span>
+            <span>H</span>
+            <span>I</span>
+            <span>J</span>
+            <span>K</span>
+            <span>L</span>
+            <span>M</span>
+            <span>N</span>
+            <span>O</span>
+            <span>P</span>
+            <span>Q</span>
+            <span>R</span>
+            <span>S</span>
+            <span>T</span>
+            <span>U</span>
+            <span>V</span>
+            <span>W</span>
+            <span>X</span>
+            <span>Y</span>
+            <span>Z</span>
+        </div>
+        <div class="cos">
+            <span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span>
+            <span class="GroupChats">
+                <img src="GroupChats.png">
+                <p>{{GroupChats}}</p>
+            </span>
+            <span class="Tags">
+                <img src="Tags.png">
+                <p>{{Tags}}</p>
+            </span>
+            <span class="OfficialAccounts">
+                <img src="OfficialAccounts.png">
+                <p>{{OfficialAccounts}}</p>
+            </span>
+        </div>
+        <div class="cox">
+            <p>A</p>
+            <span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span>
+        </div>
+        <div class="cox">
+            <p>B</p>
+            <span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span><span class="RecommendedFriend">
+                <img src="RecommendedFriend.png">
+                <p>{{RecommendedFriend}}</p>
+            </span>
+        </div>
+    </div>
+    <!--占位-->
+    <div class="footer-1"></div>
+    <div class="footer">
+        <span class="message">
+            <img src="../common/message.png">
+            <p>{{message}}</p>
+        </span>
+        <span class="contacts">
+            <img src="../common/contacts-g.png">
+            <p>{{contacts}}</p>
+        </span>
+        <span class="find">
+            <img src="../common/find.png">
+            <p>{{find}}</p>
+        </span>
+        <span class="my">
+            <img src="../common/my.png">
+            <p>{{my}}</p>
+        </span>
+    </div>
+</div>
+<style>
+    .slidebar{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 4%;
+        height: 85%;
+        right: 0;
+        top: 12rem;
+    }
+    .slidebar span{
+        width: 100%;
+        color: #4d4d4d;
+        font-size: 2rem;
+        flex-grow: 1;
+    }
+    .main {
+        width: 100%;
+        max-height: 127rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .main .cos span{
+        margin: auto;
+        border-bottom: 1px solid #d6d6d6;
+        position: relative;
+        display: block;
+        width: 90%;
+        background: white;
+        height: 12.875rem;
+    }
+    .main .cos span p{
+        display: inline-block;
+        font-size: 5rem;
+        position: absolute;
+        top: 5rem;
+        left: 17rem;
+    }
+    .main .cos span img{
+        margin-top: 2rem;
+        width: 9rem;
+        height: 9rem;
+    }
+    .main .cox>p{
+        text-indent: 5rem;
+        height: 5rem;
+        color: #949494;
+        display: block;
+        background: #ebebeb;
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .main .cox>span{
+        margin: auto;
+        border-bottom: 1px solid #d6d6d6;
+        position: relative;
+        display: block;
+        width: 90%;
+        background: white;
+        height: 12.875rem;
+    }
+    .main .cox span p{
+        display: inline-block;
+        font-size: 5rem;
+        position: absolute;
+        top: 5rem;
+        left: 17rem;
+    }
+    .main .cox span img{
+        margin-top: 2rem;
+        width: 9rem;
+        height: 9rem;
+    }
+</style>
