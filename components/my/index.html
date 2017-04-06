@@ -7,75 +7,41 @@
         <span class="search"><img src="../common/search.png"></span>
     </div>
     <div class="main">
-        <!--<span>-->
-        <!--<img src="../common/QQ/1.jpg">-->
-        <!--<p class="name">哈登</p>-->
-        <!--<p class="lastmsg">真的吗？</p>-->
-        <!--<i>删除</i>-->
-        <!--</span>-->
-        <!--<span>-->
-        <!--<img src="../common/QQ/1.jpg">-->
-        <!--<p class="name">哈登</p>-->
-        <!--<p class="lastmsg">真的吗？</p>-->
-        <!--<i>删除</i>-->
-        <!--</span>-->
-        <!--<span>-->
-        <!--<img src="../common/QQ/1.jpg">-->
-        <!--<p class="name">哈登</p>-->
-        <!--<p class="lastmsg">真的吗？</p>-->
-        <!--<i>删除</i>-->
-        <!--</span>-->
-        <!--<span>-->
-        <!--<img src="../common/QQ/1.jpg">-->
-        <!--<p class="name">哈登</p>-->
-        <!--<p class="lastmsg">真的吗？</p>-->
-        <!--<i>删除</i>-->
-        <!--</span>-->
-        <!--<span>-->
-        <!--<img src="../common/QQ/2.jpg">-->
-        <!--<i>删除</i>-->
-        <!--</span>-->
-        <!--<span>-->
-        <!--<img src="../common/QQ/3.jpg">-->
-        <!--<i>删除</i>-->
-        <!--</span>-->
-        <!--<span>-->
-        <!--<img src="../common/QQ/4.jpg">-->
-        <!--<i>删除</i>-->
-        <!--</span>-->
-        <!--<span>-->
-        <!--<img src="../common/QQ/5.jpg">-->
-        <!--<i>删除</i>-->
-        <!--</span>-->
-        <!--<span>-->
-        <!--<img src="../common/QQ/6.jpg">-->
-        <!--<i>删除</i>-->
-        <!--</span>-->
-        <!--<span>-->
-        <!--<img src="../common/QQ/7.jpg">-->
-        <!--<i>删除</i>-->
-        <!--</span>-->
-        <!--<span>-->
-        <!--<img src="../common/QQ/8.jpg">-->
-        <!--<i>删除</i>-->
-        <!--</span>-->
-        <!--<span>-->
-        <!--<img src="../common/QQ/9.jpg">-->
-        <!--<i>删除</i>-->
-        <!--</span>-->
-        <!--<span>-->
-        <!--<img src="../common/QQ/1.jpg">-->
-        <!--<i>删除</i>-->
-        <!--</span>-->
-        <!--<span>-->
-        <!--<img src="../common/QQ/2.jpg">-->
-        <!--<i>删除</i>-->
-        <!--</span>-->
-        <!--<span>-->
-        <!--<img src="../common/QQ/3.jpg">-->
-        <!--<i>删除</i>-->
-        <!--</span>-->
-        sss
+        <div style="width: 100%;height: 5rem"></div>
+        <span class="info">
+            <img src="../common/QQ/4.jpg">
+            <p class="name"></p>
+            <p class="wchatid">{{wchatid}}：{{id}}</p>
+        </span>
+        <div style="width: 100%;height: 5rem"></div>
+        <a class="item">
+            <img src="../common/xiangce.png">
+            <p>{{xiangce}}</p>
+        </a>
+        <span class="item">
+            <img src="../common/shoucang.png">
+            <p>{{shoucang}}</p>
+        </span>
+        <div style="width: 100%;height: 5rem"></div>
+        <span class="item">
+            <img src="../common/qianbao.png">
+            <p>{{qianbao}}</p>
+        </span>
+        <span class="item">
+            <img src="../common/kabao.png">
+            <p>{{kabao}}</p>
+        </span>
+        <div style="width: 100%;height: 5rem"></div>
+        <span class="item">
+            <img src="../common/biaoqing.png">
+            <p>{{biaoqing}}</p>
+        </span>
+        <div style="width: 100%;height: 5rem"></div>
+        <span class="item">
+            <img src="../common/shezhi.png">
+            <p>{{shezhi}}</p>
+        </span>
+        <div style="width: 100%;height: 5rem"></div>
     </div>
     <!--占位-->
     <div class="footer-1"></div>
@@ -98,3 +64,40 @@
         </span>
     </div>
 </div>
+<style>
+    .main{
+        background: #ebebeb;
+    }
+    .info{
+        display: block;
+        width: 100%;
+        height: 18rem;
+        background: white;
+    }
+    .info img{
+        margin-top: 2rem;
+        width: 14rem;
+        height: 14rem;
+        margin-left: 3rem;
+    }
+    .item{
+        width: 100%;
+        height: 11rem;
+        display: block;
+        background: white;
+        border: 1px solid #ebebeb;
+    }
+    .item img{
+        margin-top: 2.5rem;
+        margin-left: 3rem;
+        width: 6rem;
+        height: 6rem;
+    }
+    .item p{
+        display: inline-block;
+        font-size: 5rem;
+        position: relative;
+        top: -2rem;
+        left: 3rem;
+    }
+</style>
