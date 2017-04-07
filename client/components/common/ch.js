@@ -2,6 +2,7 @@
  * Created by huoqiu on 17/4/5.
  */
 module.exports = function(){
+    $()
     $(".message").on("tap",function(){
         window.location.hash = "/";
     });

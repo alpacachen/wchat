@@ -10,8 +10,9 @@
         <div style="width: 100%;height: 5rem"></div>
         <span class="info">
             <img src="../common/QQ/4.jpg">
-            <p class="name"></p>
+            <p class="name">{{name}}</p>
             <p class="wchatid">{{wchatid}}：{{id}}</p>
+            <img class="erweima" src="../common/erweima.png">
         </span>
         <div style="width: 100%;height: 5rem"></div>
         <a class="item">
@@ -41,7 +42,7 @@
             <img src="../common/shezhi.png">
             <p>{{shezhi}}</p>
         </span>
-        <div style="width: 100%;height: 5rem"></div>
+        <div style="width: 100%;height: 17rem"></div>
     </div>
     <!--占位-->
     <div class="footer-1"></div>
@@ -69,6 +70,7 @@
         background: #ebebeb;
     }
     .info{
+        position: relative;
         display: block;
         width: 100%;
         height: 18rem;
@@ -99,5 +101,25 @@
         position: relative;
         top: -2rem;
         left: 3rem;
+    }
+    .name{
+        position: absolute;
+        font-size: 4rem;
+        top: 6rem;
+        left: 20rem;
+    }
+    .wchatid{
+        position: absolute;
+        font-size: 4rem;
+        top: 11rem;
+        left: 20rem;
+        color: #999999;
+    }
+    .erweima{
+        float: right!important;
+        width: 4rem!important;
+        height: 4rem!important;
+        margin-right: 4rem!important;
+        margin-top: 7rem!important;
     }
 </style>

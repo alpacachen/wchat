@@ -1,0 +1,30 @@
+/**
+ * Created by huoqiu on 17/4/7.
+ */
+module.exports = {
+    title:"微信",
+    message:"微信",
+    contacts:"联系人",
+    find:"发现",
+    my:"我的",
+    RecommendedFriend:"新的朋友",
+    GroupChats:"群聊",
+    Tags:"标签",
+    OfficialAccounts:"公众号",
+    pengyouquan:"朋友圈",
+    saoyisao:"扫一扫",
+    yaoyiyao:"摇一摇",
+    gouwu:"购物",
+    youxi:"游戏",
+    xiangce:"相册",
+    shoucang:"收藏",
+    qianbao:"钱包",
+    kabao:"卡包",
+    biaoqing:"表情",
+    shezhi:"设置",
+    NewChat:"发起群聊",
+    AddContacts:"添加朋友",
+    ScanQRCode:"扫一扫",
+    Money:"收付款",
+    HelpFeedback:"帮助与反馈",
+}

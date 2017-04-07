@@ -11,6 +11,7 @@ var func = function(){
         var $this =$(this);
         $this.addClass("left");
     });
+    $(".main span").on("ontouchmove",function(e){e.preventDefault()});
     //右划
     $(".main span").swipeRight(function(){
         var $this =$(this);
@@ -19,6 +20,16 @@ var func = function(){
     //删除
     $(".main span i").on("click",function(){
         $(this).parent().remove()
+    });
+    //+
+    $(".add").on("click",function(e){
+        e.stopPropagation();
+        var additem = $(".additem");
+        additem.show();
+        //点击周围弹框隐藏
+        $(".main span,.header").one("click",function(){
+            additem.hide()
+        })
     })
 };
 module.exports = function() {
