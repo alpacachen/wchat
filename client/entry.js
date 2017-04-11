@@ -10,6 +10,7 @@ var index = require("./components/index/index.js");
 var contacts = require('./components/contacts/index.js');
 var find = require('./components/find/index.js');
 var my = require('./components/my/index.js');
+var chat = require('./components/chat/index.js');
 //注册路由
 var body = document.getElementById("app");
 var routes = {
@@ -32,6 +33,11 @@ var routes = {
             id:"cx_12138"
         };
         render(my,data)
+    },
+    '/chat/:chatId':function(chatId){
+        // $.post()
+        var data = {};
+        render(chat,data)
     }
 }
 var router = Router(routes);
