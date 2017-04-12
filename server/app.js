@@ -11,6 +11,21 @@ app.get('/', function (req, res) {
     // console.log(w)
     res.sendfile(path.resolve(__dirname,"..","client/index.html"));
 });
+app.get('/chat', function (req, res) {
+    var msg = {
+        1:"Hello",
+        2:"你好",
+        3:"阿尼哈塞呦",
+        4:"好久不见",
+        5:"噶哈呀",
+        6:"怎么了？",
+        7:"666",
+        8:"扎心了，老铁",
+        9:"想我了吗？",
+        0:"要请我吃饭啊"
+    };
+    res.json(msg[Math.floor(Math.random()*10)])
+});
 http.createServer(app).listen('3000','0.0.0.0');
 // var server = app.listen(3000, function () {
 //     var host = server.address().address;

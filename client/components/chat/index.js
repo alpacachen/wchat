@@ -9,18 +9,23 @@ var func = function(){
     require("../common/ch.js")();
     document.onkeydown = function(event){
         var e = event || window.event || arguments.callee.caller.arguments[0];
+        //发送消息
         if(e && e.keyCode==13){
             $(".main").append('<div class="line2">'+
                 '<img class="other" src='+ require("../common/QQ/5.jpg") +'>'+
                 '<div class="arr"></div>'+
                 '<p class="chatblock">'+$(".word").val()+'</p>'+
                 '</div>');
-            // $('.main').scrollTop( $('.main')[0].scrollHeight );
-            $(".main").scrollTop(1000)
-            console.log($(".main")[0].scrollHeight)
-            console.log($(".main").scrollTop)
-            console.log($(".main"))
+            $(".main").children().last()[0].scrollIntoView()
             $(".word").val("");
+            $.get("chat",function(data){
+                $(".main").append('<div class="line1">'+
+                    '<img class="other" src='+ require("../common/QQ/4.jpg") +'>'+
+                    '<div class="arr"></div>'+
+                    '<p class="chatblock">'+data+'</p>'+
+                    '</div>');
+                $(".main").children().last()[0].scrollIntoView()
+            })
         }
     }
 };
