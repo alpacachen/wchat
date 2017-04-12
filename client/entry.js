@@ -35,8 +35,11 @@ var routes = {
         render(my,data)
     },
     '/chat/:chatId':function(chatId){
+        alert(chatId)
         // $.post()
-        var data = {};
+        var data = {
+            chatId:"chatId"
+        };
         render(chat,data)
     }
 }
