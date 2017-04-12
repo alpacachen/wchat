@@ -29,48 +29,14 @@
         </a>
     </div>
     <div class="main">
-        <!--<span>-->
-            <!--<img src="../common/QQ/1.jpg">-->
-            <!--<p class="name">哈登</p>-->
-            <!--<p class="lastmsg">真的吗？sssss</p>-->
-            <!--<i>删除</i>-->
-        <!--</span>-->
-        <a href="#/chat/harden">
-            <img src="../common/QQ/1.jpg">
-            <i>删除</i>
-        </a>
-        <a href="#/chat/littlefour">
-            <img src="../common/QQ/2.jpg">
-            <i>删除</i>
-        </a>
-        <a href="#/chat/MVP">
-            <img src="../common/QQ/3.jpg">
-            <i>删除</i>
-        </a>
-        <a href="#/chat/mine">
-            <img src="../common/QQ/4.jpg">
-            <i>删除</i>
-        </a>
-        <a href="#/chat/boss">
-            <img src="../common/QQ/5.jpg">
-            <i>删除</i>
-        </a>
-        <!--<a href="#/chat/6">-->
-            <!--<img src="../common/QQ/6.jpg">-->
-            <!--<i>删除</i>-->
-        <!--</a>-->
-        <!--<a href="#/chat/7">-->
-            <!--<img src="../common/QQ/7.jpg">-->
-            <!--<i>删除</i>-->
-        <!--</a>-->
-        <!--<a href="#/chat/8">-->
-            <!--<img src="../common/QQ/8.jpg">-->
-            <!--<i>删除</i>-->
-        <!--</a>-->
-        <!--<a href="#/chat/9">-->
-            <!--<img src="../common/QQ/9.jpg">-->
-            <!--<i>删除</i>-->
-        <!--</a>-->
+        {{#each list}}
+            <a href="#/chat/{{this.name}}">
+                <img src="{{getsrc this.pic}}">
+                <p class="name">{{this.name}}</p>
+                <p class="lastmsg">{{this.lastmsg}}</p>
+                <i>删除</i>
+            </a>
+        {{/each}}
     </div>
     <!--占位-->
     <div class="footer-1"></div>

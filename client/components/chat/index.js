@@ -12,15 +12,16 @@ var func = function(){
         //发送消息
         if(e && e.keyCode==13){
             $(".main").append('<div class="line2">'+
-                '<img class="other" src='+ require("../common/QQ/5.jpg") +'>'+
+                '<img class="other" src='+ require("../common/QQ/4.jpg") +'>'+
                 '<div class="arr"></div>'+
                 '<p class="chatblock">'+$(".word").val()+'</p>'+
                 '</div>');
             $(".main").children().last()[0].scrollIntoView()
             $(".word").val("");
             $.get("chat",function(data){
+                var a = "5.jpg";
                 $(".main").append('<div class="line1">'+
-                    '<img class="other" src='+ require("../common/QQ/4.jpg") +'>'+
+                    '<img class="other" src='+ $(".main").attr("pic") +'>'+
                     '<div class="arr"></div>'+
                     '<p class="chatblock">'+data+'</p>'+
                     '</div>');

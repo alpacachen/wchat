@@ -33,13 +33,11 @@ var func = function(){
       Y:$(".toY").offset()?$(".toY").offset().top:0,
       Z:$(".toZ").offset()?$(".toZ").offset().top:0
     };
-    // console.log(obj.B)
     //footer跳转
     require("../common/ch.js")();
     //首字母导航栏
     $(".slidebar").on("tap","span",function(){
         //获取div的位置
-        // console.log($(".to"+$(this).attr("class")).offset().top)
         $(".main").scrollTop(obj[$(this).attr("class")]-150);
     })
 };

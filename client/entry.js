@@ -15,8 +15,15 @@ var chat = require('./components/chat/index.js');
 var body = document.getElementById("app");
 var routes = {
     '/':function(){
-        var data = {};
-        render(index,data)
+        //获取聊天列表
+        $.get('/list',function(data){
+            if (data.success){
+                render(index,data)
+            }else{
+                alert("获取数据出错")
+            }
+        })
+
     },
     '/contacts':function(){
         var data = {};
@@ -35,12 +42,9 @@ var routes = {
         render(my,data)
     },
     '/chat/:chatId':function(chatId){
-        alert(chatId)
-        // $.post()
-        var data = {
-            chatId:"chatId"
-        };
-        render(chat,data)
+        $.get('/chattingRecords/'+chatId,function(data){
+            render(chat,data)
+        })
     }
 }
 var router = Router(routes);

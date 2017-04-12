@@ -3,34 +3,43 @@
  */
 var handlebars = require('handlebars');
 var html = handlebars.compile(require('./index.html'));
+handlebars.registerHelper("getsrc",function(val){
+    var a = "/components/common/QQ/"+val;
+    return a;
+})
 var func = function(){
     //footer跳转
     require("../common/ch.js")();
     //左划
-    $(".main span").swipeLeft(function(){
+    $(".main a").swipeLeft(function(){
         var $this =$(this);
         $this.addClass("left");
     });
-    $(".main span").on("ontouchmove",function(e){e.preventDefault()});
+    $(".main a").on("ontouchmove",function(e){e.preventDefault()});
     //右划
-    $(".main span").swipeRight(function(){
+    $(".main a").swipeRight(function(){
         var $this =$(this);
         $this.removeClass("left");
     });
     //删除
-    $(".main span i").on("click",function(){
+    $(".main a i").on("click",function(e){
+        e.preventDefault()
+        e.stopPropagation();
         $(this).parent().remove()
     });
     //+
-    $(".add").on("click",function(e){
+    $(".add").on("tap",function(e){
         e.stopPropagation();
         var additem = $(".additem");
         additem.show();
         //点击周围弹框隐藏
-        $(".main span,.header").one("click",function(){
+        $(".main,.header").one("click",function(e){
+            e.preventDefault()
             additem.hide()
         })
     })
+    //
+
 };
 module.exports = function() {
     return {
