@@ -11,6 +11,7 @@ var contacts = require('./components/contacts/index.js');
 var find = require('./components/find/index.js');
 var my = require('./components/my/index.js');
 var chat = require('./components/chat/index.js');
+var shake = require('./components/shake/index.js')
 //注册路由
 var body = document.getElementById("app");
 var routes = {
@@ -45,6 +46,10 @@ var routes = {
         $.get('/chattingRecords/'+chatId,function(data){
             render(chat,data)
         })
+    },
+    '/shake':function(){
+        var data = {};
+        render(shake,data)
     }
 }
 var router = Router(routes);

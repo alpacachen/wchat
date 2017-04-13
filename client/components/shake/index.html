@@ -1,0 +1,174 @@
+<div id="index">
+    <!--占位-->
+    <div class="header-1"></div>
+    <div class="header">
+        <a href="javascript:history.go(-1)"><img class="back" src="back.png"></a>
+        <span class="chatname">{{yaoyiyao}}</span>
+        <img class="info" src="setting.png">
+    </div>
+    <div class="main">
+        <audio id="audio" src="/components/shake/shake.mp3">
+        </audio>
+        <img class="handphone" src="shake.png">
+        <div style="display: none" class="loading">
+            <img src="loading.png">
+            <p>正在匹配中，请稍等</p>
+        </div>
+        <div style="display: none" class="peo">
+            <img src="hashiqi.jpg">
+            <p class="peoname">哈士奇</p>
+            <p class="distance">相距2333公里</p>
+            <img class="nv" src="nv.png">
+        </div>
+    </div>
+</div>
+<style>
+    #app{
+        background: #292c2d;
+    }
+    .back{
+        margin-top: 1.4rem;
+        width: 6rem;
+        float: left;
+        margin-left: 3rem;
+    }
+    .chatname{
+        display: block;
+        border-left: 2px solid #2c2b30;
+        float: left;
+        color: #fffeff;
+        padding-left: 2rem;
+        margin-left: 2rem;
+    }
+    .info{
+        width: 6rem;
+        float: right;
+        margin-top: 1.4rem;
+        margin-right: 3rem;
+    }
+    .handphone{
+        position: absolute;
+        top: 40%;
+        left: 40%;
+    }
+    .peo{
+        display: block;
+        width: 90%;
+        height: 18rem;
+        background: red;
+        margin: auto;
+        margin-top: 117%;
+        background: #393b3c;
+        border-radius: 3rem;
+    }
+    .peo img{
+        width: 18%;
+        height: 73%;
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+    .peoname{
+        color: #969797;
+        font-size: 5rem;
+        display: block;
+        position: relative;
+        bottom: 11rem;
+        margin-left: 20rem;
+    }
+    .distance{
+        color: #969797;
+        font-size: 5rem;
+        display: block;
+        position: relative;
+        bottom: 9rem;
+        margin-left: 19rem;
+    }
+    .nv{
+        display: block;
+        width: 5rem!important;
+        height: 5rem!important;
+        position: relative;
+        left: 33rem;
+        bottom: 22rem;
+    }
+    @-webkit-keyframes shake {
+        0% {
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);		/* IE 9 */
+            -webkit-transform: rotate(0deg);	/* Safari and Chrome */
+            -o-transform: rotate(0deg);		/* Opera */
+            -moz-transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(-60deg);
+            -ms-transform: rotate(-60deg);		/* IE 9 */
+            -webkit-transform: rotate(-60deg);	/* Safari and Chrome */
+            -o-transform: rotate(-60deg);		/* Opera */
+            -moz-transform: rotate(-60deg);
+        }
+        50% {
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);		/* IE 9 */
+            -webkit-transform: rotate(0deg);	/* Safari and Chrome */
+            -o-transform: rotate(0deg);		/* Opera */
+            -moz-transform: rotate(0deg);
+        }
+        75% {
+            transform: rotate(60deg);
+            -ms-transform: rotate(60deg);		/* IE 9 */
+            -webkit-transform: rotate(60deg);	/* Safari and Chrome */
+            -o-transform: rotate(60deg);		/* Opera */
+            -moz-transform: rotate(60deg);
+        }
+        100% {
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);		/* IE 9 */
+            -webkit-transform: rotate(0deg);	/* Safari and Chrome */
+            -o-transform: rotate(0deg);		/* Opera */
+            -moz-transform: rotate(0deg);
+        }
+    }
+    .shakeshake{
+        animation: shake 1.5s linear ;
+        -moz-animation: shake 1.5s linear ;
+        -webkit-animation: shake 1.5s linear ;
+        -o-animation: shake 1.5s linear ;
+    }
+    .loading{
+        font-size: 5rem;
+        color: white;
+        position: absolute;
+        top: 60%;
+        left: 17%;
+    }
+    .loading p {
+        display: inline-block;
+        position: relative;
+        bottom: 1rem;
+    }
+    @-webkit-keyframes rad {
+        100% {
+            transform: rotate(360deg);
+            -ms-transform: rotate(360deg);		/* IE 9 */
+            -webkit-transform: rotate(360deg);	/* Safari and Chrome */
+            -o-transform: rotate(360deg);		/* Opera */
+            -moz-transform: rotate(360deg);
+        }
+        0% {
+            transform: rotate(0deg);
+            -ms-transform: rotate(0deg);		/* IE 9 */
+            -webkit-transform: rotate(0deg);	/* Safari and Chrome */
+            -o-transform: rotate(0deg);		/* Opera */
+            -moz-transform: rotate(0deg);
+        }
+    }
+    .loading img{
+        width: 6rem;
+        height: 6rem;
+        animation: rad 1s linear infinite;
+        -moz-animation: rad 1s linear infinite;
+        -webkit-animation: rad 1s linear infinite;
+        -o-animation: rad 1s linear infinite;
+    }
+
+</style>
