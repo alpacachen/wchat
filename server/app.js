@@ -9,6 +9,7 @@ var app = express();
 app.use(express.static(path.resolve(__dirname,"../client")));
 app.get('/', function (req, res) {
     res.sendfile(path.resolve(__dirname,"..","client/index.html"));
+    console.log("index")
 });
 //获取消息列表
 app.get('/list',function(req,res){
